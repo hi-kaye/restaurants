@@ -1,0 +1,9 @@
+{
+  "scripts": {
+    "test":"jest --watchAll",
+    "test:coverage": "jest --coverage=true"
+  },
+  "dependencies": {
+    "jest": "^26.4.2"
+  }
+}

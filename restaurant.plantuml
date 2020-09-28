@@ -1,0 +1,22 @@
+@startuml
+class Restaurant {
+    name STRING
+    image STRING
+    menus Array<Menu>
+    {method} getMenu
+}
+class Menu {
+    title STRING
+    items Array<Item>
+    {method} getPrice
+    {method} getName
+}
+
+class Item {
+    name STRING
+    price FLOAT
+}
+
+Restaurant --{Menu
+Menu--{Item
+@enduml
